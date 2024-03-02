@@ -1,0 +1,316 @@
+:root {
+	--header-height: 100px;
+}
+@media screen and (max-width: 768px) {
+	:root {
+		--header-height: 80px;
+	}
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+p {
+	line-height: 1.5;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+button, input {
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	width: 95%;
+	height: 100%;
+	margin: auto;
+}
+.banner {
+	margin-top: var(--header-height);
+	width: 100%;
+	height: calc(100svh - var(--header-height));
+	display: flex;
+	align-items: end;
+	background-color: black;
+}
+.banner__wrapper {
+	display: flex;
+	align-items: end;
+	position: relative;
+}
+.banner__title {
+	text-transform: uppercase;
+	font-size: clamp(40px, 12vw, 200px);
+	line-height: 1;
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 800;
+	padding-bottom: 5px;
+	z-index: 99;
+	color: white;
+}
+.aboutus {
+	padding: 50px 0;
+	scroll-margin-top: var(--header-height);
+}
+.aboutus__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.aboutus__header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+.aboutus__header h2 {
+	color: orangered;
+	font-size: clamp(36px, 4.7vw, 90px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 800;
+}
+.aboutus__description p {
+	font-size: clamp(26px, 3.13vw, 60px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	max-width: 80%;
+}
+@media screen and (max-width: 767px) {
+	.aboutus__description p {
+		max-width: 100%;
+	}
+}
+.form {
+	background-color: orangered;
+	padding-top: 50px;
+	scroll-margin-top: var(--header-height);
+}
+.form__header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 20px 0;
+	width: 100%;
+}
+.form__header h2 {
+	color: white;
+	font-size: clamp(36px, 4.7vw, 90px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-inline: 2.5%;
+}
+.form__form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+}
+.input-wrapper {
+	width: 95%;
+	padding-inline: 2.5%;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto 50px;
+}
+.form__form input {
+	background-color: orangered;
+	border: none;
+	color: white;
+	font-size: clamp(26px, 3.13vw, 60px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+.form__form input::placeholder {
+	color: white;
+	opacity: 1;
+}
+.form__form input:hover::placeholder {
+	opacity: .5;
+}
+.form__form input:focus {
+	outline: none;
+}
+.form__form button {
+	background-color: black;
+	border: none;
+	color: white;
+	font-size: clamp(26px, 3.13vw, 60px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	padding-inline: 2.5%;
+	display: flex;
+	justify-content: start;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	cursor: pointer;
+}
+.form__form button:hover {
+	color: orangered;
+}
+@media screen and (max-width: 425px) {
+	.form__form input {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+.error-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.error-circle {
+	width: 2.6vw;
+	height: 2.6vw;
+	background-color: darkred;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 5px darkred;
+}
+div[error-message-name] {
+	display: none;
+}
+div[error-message-phone] {
+	display: none;
+}
+.callback__form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+}
+.social {
+	padding: 50px 0;
+	background-color: yellow;
+}
+.social__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.social__header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 20px 0 60px;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+	.social__header {
+		padding: 20px 0 40px;
+	}
+}
+.social__header h2 {
+	color: black;
+	font-size: clamp(26px, 3.13vw, 60px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+}
+.social__content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr
+}
+.social__content a {
+	font-size: clamp(24px, 1.78vw, 34px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	color: black;
+	text-decoration: none;
+}
+.social-instagram::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	background-image: url("instagram-logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 0 0 auto;
+}
+.social-tiktok::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	background-image: url("tiktok-logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 0 0 auto;
+}
+.social-youtube::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	background-image: url("youtube-logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 0 0 auto;
+}
+@media screen and (max-width: 800px) {
+	.social__content {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+	}
+}
+.mobile-video {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - var(--header-height));
+	object-fit: cover;
+}
+.sign-button {
+	text-decoration: none;
+	color: red;
+	font-size: clamp(24px, 1.56vw, 30px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border: 3px solid red;
+	background-color: transparent;
+	cursor: pointer;
+}
+.sign-button:hover {
+	background-color: red;
+	color: white;
+}
+@media screen and (max-width: 767px) {
+	.sign-button {
+		display: none;
+	}
+}
+.sign-button__mobile {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	width: 100%;
+	padding: 15px 0;
+	text-decoration: none;
+	color: white;
+	font-size: clamp(24px, 1.56vw, 30px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: red;
+}

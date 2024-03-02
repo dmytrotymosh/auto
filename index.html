@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="how.css">
+	<link rel="stylesheet" href="benefits.css">
+	<link rel="stylesheet" href="accordion.css">
+	<link rel="stylesheet" href="callback.css">
+	<link rel="stylesheet" href="price.css">
+	<link rel="stylesheet" href="instructors.css">
+	<link rel="stylesheet" href="cars.css">
+	<link rel="stylesheet" href="timetable.css">
+	<link rel="stylesheet" href="documents.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper header__wrapper">
+			<div class="header__image">
+				<img src="logo.png" alt="логотип">
+			</div>
+			<div class="sign-button__handler">
+				<a class="sign-button" href="#form">Записатися</a>
+			</div>
+			<div class="header__burger">
+				<div class="burger-circle burger__circle-1"></div>
+				<div class="burger-circle burger__circle-2"></div>
+				<div class="burger-circle burger__circle-3"></div>
+				<!-- <span class="burger__item"></span> -->
+			</div>
+		</div>
+	</header>
+	<div class="wrapper mobile-navigation__wrapper">
+		<nav class="header__mobile-navigation">
+			<ul class="mobile-navigation">
+				<li class="mobile-navigation__item">
+					<a class="link" href="#aboutus">Про нас</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#benefits">Переваги</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#instructors">Інструктори</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#cars">Автомобілі</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#timetable">Розклад занять</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#qa">Часто запитують</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#price">Ціни</a>
+				</li>
+				<li class="mobile-navigation__item">
+					<a class="link" href="#">Telegram</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<main class="main">
+		<section class="banner">
+			<div class="wrapper banner__wrapper">
+				<h1 class="banner__title">
+					Формула<br>водіння
+				</h1>
+			</div>
+			<video src="мобільне-відео.mp4" muted autoplay loop class="mobile-video"></video>
+		</section>
+		<section class="aboutus" id="aboutus">
+			<div class="wrapper aboutus__wrapper">
+				<div class="aboutus__header">
+					<h2>Хто ми?</h2>
+				</div>
+				<div class="aboutus__description">
+					<p>Ми &mdash; твій партнер на шляху до впевненості за кермом. Наша місія &mdash; навчити тебе водити з безпекою та відповідальністю.</p>
+				</div>
+			</div>
+		</section>
+		<section class="how">
+			<div class="wrapper how__wrapper">
+				<div class="how__header">
+					<h2>Яким чином?</h2>
+				</div>
+				<div class="how__container">
+					<div class="how__card">
+						<h3 class="card__title">1</h3>
+						<p class="card__description">Вивчай Правила дорожнього руху та готуйся до іспиту.</p>
+					</div>
+					<div class="how__card">
+						<h3 class="card__title">2</h3>
+						<p class="card__description">Складай теорію в ТСЦ МВС та отримуй допуск до практичних занять.</p>
+					</div>
+					<div class="how__card">
+						<h3 class="card__title">3</h3>
+						<p class="card__description">Обери інструктора, тип КПП та навчайся в зручний час.</p>
+					</div>
+					<div class="how__card">
+						<h3 class="card__title">4</h3>
+						<p class="card__description">Реєструйся в чергу МВС, щоб скласти іспити та отримати посвідчення водія.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="benefits" id="benefits">
+			<div class="benefits__wrapper">
+				<div class="benefits__header">
+					<h2>Складові формули водіння</h2>
+					<p>Поєднання інноваційних методик навчання, досвіду кваліфікованих інструкторів та індивідуального підходу до кожного студента</p>
+				</div>
+				<div class="benefits__container">
+					<div class="benefit-card">
+						<h3 class="benefit-card__title">Чесність</h3>
+						<p class="benefit-card__description">Учень сплачує лише години навчання, без додаткових доплат (пошкодження машини та її наповнення — відповідальність школи та інструктора)</p>
+					</div>
+					<div class="benefit-card">
+						<h3 class="benefit-card__title">Індивідуалізм</h3>
+						<p class="benefit-card__description">Вважаємо, що не існує людей, яким «не дано керувати авто», усі потребують всього лише різну кількість годин практики</p>
+					</div>
+					<div class="benefit-card">
+						<h3 class="benefit-card__title">Прозорість</h3>
+						<p class="benefit-card__description">Навчання, яке дає змогу здати екзамен самостійно, без хабарів</p>
+					</div>
+					<div class="benefit-card">
+						<h3 class="benefit-card__title">Комфорт</h3>
+						<p class="benefit-card__description">Не підвищуємо голос на учнів за жодних обставин</p>
+					</div>
+					<div class="benefit-card">
+						<h3 class="benefit-card__title">Діджиталізація</h3>
+						<p class="benefit-card__description">Маємо електронний запис на водіння</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="callback">
+				<div class="callback__header">
+					<h2>Замовте дзвінок</h2>
+				</div>
+				<!-- <form action="callback.php" method="post" class="callback__form">
+					<input type="tel" placeholder="0xx 123 45 67">
+					<button type="sumbit">Передзвоніть</button>
+				</form> -->
+				<form action="form.php" method="post" class="form__form callback__form">
+					<div class="input-wrapper">
+						<input type="tel" placeholder="0xx 123 45 67" name="tel">
+						<div class="error-wrapper" error-message-phone>
+							<div class="error-circle"></div>
+						</div>
+					</div>
+					<button type="sumbit">Надіслати</button>
+				</form>
+		</section>
+		<section class="instructors" id="instructors">
+			<div class="instructors__wrapper wrapper">
+				<div class="instructors__header">
+					<h2>Інструктори</h2>
+				</div>
+				<div class="instructors-content">
+					<div class="instructors-card">
+						<div class="instructors-front alex">
+							<div class="instructors-text">
+								<h3 class="instructros-text__title">Олексій</h3>
+								<div class="instructors-text__description">
+									<ul>
+										<li>
+											<p>понад 10 років стажу водіння</p>
+										</li>
+										<li>
+											<p>понад 3 роки навчає інших</p>
+										</li>
+										<li>
+											<p>механічна та автоматична КПП</p>
+										</li>
+										<li>
+											<p>станція метро Спортивна</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="instructors-card__info">
+							<h3 class="instructros-text__title">Олексій</h3>
+							<div class="instructors-text__description">
+								<ul>
+									<li>
+										<p>понад 10 років стажу водіння</p>
+									</li>
+									<li>
+										<p>понад 3 роки навчає інших</p>
+									</li>
+									<li>
+										<p>механічна та автоматична КПП</p>
+									</li>
+									<li>
+										<p>станція метро Спортивна</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="instructors-card">
+						<div class="instructors-front artem">
+							<div class="instructors-text">
+								<h3 class="instructros-text__title">Артем</h3>
+								<div class="instructors-text__description">
+									<ul>
+										<li>
+											<p>понад 7 років стажу водіння</p>
+										</li>
+										<li>
+											<p>понад рік навчає інших</p>
+										</li>
+										<li>
+											<p>механічна КПП</p>
+										</li>
+										<li>
+											<p>станція метро Холодна гора</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="instructors-card__info">
+							<h3 class="instructros-text__title">Артем</h3>
+							<div class="instructors-text__description">
+								<ul>
+									<li>
+										<p>понад 7 років стажу водіння</p>
+									</li>
+									<li>
+										<p>понад рік навчає інших</p>
+									</li>
+									<li>
+										<p>механічна КПП</p>
+									</li>
+									<li>
+										<p>станція метро Холодна гора</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cars" id="cars">
+			<div class="cars__wrapper wrapper">
+				<div class="cars__header">
+						<h2>Автомобілі</h2>
+				</div>
+				<div class="cars-content">
+					<div class="cars-card">
+						<div class="cars-front auto-1">
+							<div class="cars-text">
+								<h3 class="cars-text__title">Модель</h3>
+								<div class="cars-text__description">
+									<p>Тип КПП</p>
+								</div>
+							</div>
+						</div>
+						<div class="cars-card__info">
+							<h3 class="cars-text__title">Модель</h3>
+							<div class="cars-text__description">
+								<p>Тип КПП</p>
+							</div>
+						</div>
+					</div>
+					<div class="cars-card">
+						<div class="cars-front auto-2">
+							<div class="cars-text">
+								<h3 class="cars-text__title">Модель</h3>
+								<div class="cars-text__description">
+									<p>Тип КПП</p>
+								</div>
+							</div>
+						</div>
+						<div class="cars-card__info">
+							<h3 class="cars-text__title">Модель</h3>
+							<div class="cars-text__description">
+								<p>Тип КПП</p>
+							</div>
+						</div>
+					</div>
+					<div class="cars-card">
+						<div class="cars-front auto-3">
+							<div class="cars-text">
+								<h3 class="cars-text__title">Модель</h3>
+								<div class="cars-text__description">
+									<p>Тип КПП</p>
+								</div>
+							</div>
+						</div>
+						<div class="cars-card__info">
+							<h3 class="cars-text__title">Модель</h3>
+							<div class="cars-text__description">
+								<p>Тип КПП</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="timetable" id="timetable">
+			<div class="wrapper timetable__wrapper">
+				<div class="timetable__header">
+					<h2>Розклад занять</h2>
+				</div>
+				<div class="timetable__container">
+					<div class="timetable__card">
+						<h3 class="timetable__title">Понеділок & четвер</h3>
+						<p class="timetable__time">з 09:00 до 17:00</p>
+						<p class="timetable__description">перше заняття 30 лютого</p>
+						<p class="timetable__recruiting">набір триває</p>
+					</div>
+					<div class="timetable__card">
+						<h3 class="timetable__title">Вівторок & п'ятниця</h3>
+						<p class="timetable__time">з 09:00 до 17:00</p>
+						<p class="timetable__description">перше заняття 30 лютого</p>
+						<p class="timetable__recruiting">набір триває</p>
+					</div>
+					<div class="timetable__card">
+						<h3 class="timetable__title">Субота & неділя</h3>
+						<p class="timetable__time">з 09:00 до 17:00</p>
+						<p class="timetable__description">перше заняття 30 лютого</p>
+						<p class="timetable__recruiting">набір триває</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="documents">
+			<div class="documents__wrapper">
+				<div class="documents__header">
+					<h2>Подача документів</h2>
+				</div>
+				<div class="documents__container">
+					<p class="documents__days">З понеділка до суботи</p>
+					<p class="documents__time">з 08:00 до 17:00</p>
+					<div class="documents__list">
+						<ul>
+							<li>
+								<p>копія паспорту</p>
+							</li>
+							<li>
+								<p>копія індивідуального податкового номеру (ІПН)</p>
+							</li>
+							<li>
+								<p>оригінал та копія медичної довідки водія</p>
+							</li>
+						</ul>
+					</div>
+					<p class="documents__telegram">подати документа можна через 
+						<a href="#">Telegram</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="qa" id="qa">
+			<div class="qa__header">
+				<div class="wrapper qa__wrapper">
+					<div class="qa__header">
+						<h2>Часто запитують</h2>
+					</div>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="accordion-item">
+					<div class="accrodion-item__question">
+						<div class="question">Яка ідеальна кількість годин для вивчення водіння з нуля?</div>
+					</div>
+					<div class="accordion-item__answer">
+						<p>Ідеальна кількість — це 40 годин. За цей час ми зможемо розглянути всі необхідні теми та потренувати усі навички якомога краще.</p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accrodion-item__question">
+						<div class="question">На якій коробці передач навчатися краще?</div>
+					</div>
+					<div class="accordion-item__answer">
+						<p>Якщо навчитися їздити на автоматі — далі буде легше освоїти механіку, бо складно робити одразу багато дій, коли ми кожну з них не навчилися робити окремо.</p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accrodion-item__question">
+						<div class="question">Де відбуваються зустрічі інструктора з учнями?</div>
+					</div>
+					<div class="accordion-item__answer">
+						<p>Наші інструктори зустрічають учнів у 2 місцях: станції метро Спортивна та Холодна гора.</p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accrodion-item__question">
+						<div class="question">Чи можна вивчати теорію у Вашій школі?</div>
+					</div>
+					<div class="accordion-item__answer">
+						<p>Звісно, ми маємо для Вас теоретичні заняття з водіння онлайн. 80 годин навчання коштують 5000 грн (література у подарунок).</p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accrodion-item__question">
+						<div class="question">Що входить у ціну за навчання водінню?</div>
+					</div>
+					<div class="accordion-item__answer">
+						<p>— Заправлена та справна автівка<br>
+							— Оцінка ваших навичок та побудова плану навчання<br>
+							— Сучасна методика навчання<br>
+							— Навички, які дозволять їздити за будь-яких дорожніх умов<br>
+							— Запис на сайті<br>
+							— SMS нагадування за 2 години до початку уроку</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="price" id="price">
+			<div class="wrapper price__wrapper">
+				<div class="price__header">
+					<p class="price-header__decor">$$$</p>
+					<h2>Прайс лист</h2>
+				</div>
+				<div class="price__container">
+					<div class="price-title theory">
+						<h3>Вивчення Правил дорожнього руху</h3>
+					</div>
+					<div class="theory-card">
+						<p class="theory-card__description">5000 грн за 80 годин теорії<br>
+							живе спілкування з викладачем в Zoom<br>
+							література у подарунок
+						</p>
+					</div>
+					<div class="price-title preparation">
+						<h3>Підготовка водіїв з нуля</h3>
+					</div>
+					<div class="preparation-cards">
+						<div class="price__card">
+							<h3 class="price-card__title">Механічна КПП</h3>
+							<p class="price-card__description">500 грн/год<br>
+								мінімум — 20 годин<br>
+								тривалість 1 заняття — 2 години</p>
+						</div>
+						<div class="price__card">
+							<h3 class="price-card__title">Автоматична КПП</h3>
+							<p class="price-card__description">550 грн/год<br>
+								мінімум — 20 годин<br>
+								тривалість 1 заняття — 2 години</p>
+						</div>
+					</div>
+					<div class="price-title rising">
+						<h3>Підвищення та поновлення навичок водіння</h3>
+					</div>
+					<div class="rising-cards">
+						<div class="price__card">
+							<h3 class="price-card__title">Механічна КПП</h3>
+							<p class="price-card__description">500 грн/год<br>
+								кількість годин не обмежена<br>
+								тривалість 1 заняття — 2 години</p>
+						</div>
+						<div class="price__card">
+							<h3 class="price-card__title">Автоматична КПП</h3>
+							<p class="price-card__description">550 грн/год<br>
+								кількість годин не обмежена<br>
+								тривалість 1 заняття — 2 години</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="form" id="form">
+				<div class="form__header">
+					<h2>Почніть навчання</h2>
+				</div>
+				<form action="form.php" method="post" class="form__form">
+					<div class="input-wrapper">
+						<input type="text" name="name" placeholder="ВАШЕ ІМ'Я...">
+						<div class="error-wrapper" error-message-name>
+							<div class="error-circle"></div>
+						</div>
+					</div>
+					<div class="input-wrapper">
+						<input type="tel" placeholder="0xx 123 45 67" name="tel">
+						<div class="error-wrapper" error-message-phone>
+							<div class="error-circle"></div>
+						</div>
+					</div>
+					<button type="sumbit">Записатися</button>
+				</form>
+		</section>
+		<section class="social">
+			<div class="wrapper social__wrapper">
+				<div class="social__header">
+					<h2>Соціальні мережі</h2>
+				</div>
+				<div class="social__content">
+					<a class="social-instagram" href="#">Instagram</a>
+					<a class="social-tiktok" href="#">Tik-Tok</a>
+					<a class="social-youtube" href="#">YouTube</a>
+				</div>
+			</div>
+		</section>
+		<a class="sign-button__mobile" href="#form">Записатися</a>
+	</main>
+	<script src="burger.js"></script>
+	<script src="accordion.js"></script>
+	<script src="mask.js"></script>
+	<script src="formValidator.js"></script>
+	<script src="nameFormatter.js"></script>
+	<script>
+		const signMobileButton = document.querySelector('.sign-button__mobile');
+		const screenWidth = window.innerWidth;
+		window.addEventListener('scroll', () => {
+			const scrollPosition = window.scrollY;
+			if (screenWidth < 768 && scrollPosition > 54) {
+				signMobileButton.style.display = 'flex';
+			} else {
+				signMobileButton.style.display = 'none';
+			}
+		});
+	</script>
+</body>
+</html>

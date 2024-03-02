@@ -1,0 +1,99 @@
+.how {
+	padding-top: 50px;
+	background-color: black;
+}
+.how__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.how__header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .4);
+	text-transform: uppercase;
+}
+.how__header h2 {
+	color: white;
+	font-size: clamp(36px, 4.7vw, 90px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 800;
+}
+.how__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: repeat(1, 1fr);
+}
+.how__card {
+	border-right: 1px solid rgba(255, 255, 255, .4);
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.how__card:last-child {
+	border: none;
+}
+.how__card:hover .card__title,
+.how__card:hover .card__description {
+	color: yellow;
+}
+.card__title {
+	color: white;
+	font-size: clamp(36px, 4.7vw, 90px);
+	font-family: 'Unbounded', sans-serif;
+	font-weight: 800;
+	padding-bottom: 40px;
+}
+.card__description {
+	font-size: clamp(18px, 1.3vw, 26px);
+	color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+	.how__card {
+		padding: 30px;
+	}
+	.card__title {
+		padding-bottom: 30px;
+	}
+	.how__container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: repeat(2, 1fr);
+	}
+	.how__card:nth-child(odd) {
+		border-right: 1px solid rgba(255, 255, 255, .4);
+		border-top: none;
+	}
+	.how__card:nth-child(even) {
+		border-right: none;
+		border-top: none;
+	}
+	.how__card:nth-child(3), .how__card:nth-child(4) {
+		border-top: 1px solid rgba(255, 255, 255, .4);
+	}
+}
+@media screen and (max-width: 767px) {
+	.how {
+		padding-top: 30px;
+	}
+	.how__container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: repeat(4, 1fr);
+	}
+	.how__card:first-child {
+		border: none;
+	}
+	.how__card {
+		border-right: none;
+		border-top: 1px solid rgba(255, 255, 255, .4);
+	}
+	.how__card:last-child {
+		border-top: 1px solid rgba(255, 255, 255, .4);
+	}
+	.how__card {
+		padding: 30px 0;
+	}
+	.card__title {
+		padding-bottom: 20px;
+	}
+}
